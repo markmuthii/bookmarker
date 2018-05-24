@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bookmark Application</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+     <link href="css/style.css" rel="stylesheet">
+     <link href="css/animate.min.css" rel="stylesheet">
+     <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+      <div class="header clearfix wow fadeInDown" data-wow-duration="3s" data-wow-delay="1s">
+        <h3 class="text-muted text-center">Bookmarker Application</h3>
+      </div>
+
+      <div class="jumbotron wow fadeInUp" data-wow-duration="3s" data-wow-delay="2s">
+
+        <h2>Bookmark Your Fav Sites</h2>
+        <form id="myForm">
+
+          <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Enter Website Name" autofocus>
+          </div>
+          <div class="form-group">
+            <label>Site URL</label>
+            <input type="text" class="form-control" id="siteUrl" placeholder="Enter Website URL">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>   
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <div id="bookmarkresults"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Designed with  <span class="fa fa-heart animated pulse infinite"></span>  and  <span class="fa fa-coffee"></span> by <a href="#">Mark Muthii</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/main.js"></script> 
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+  </body>
+</html>
